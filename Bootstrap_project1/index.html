@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Planet fit</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="site_fevicon.png"
+      sizes="32x32" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <!-- *******  link to css page ********-->
+    <link rel="stylesheet" href="bootstrap_proj1.css" />
+  </head>
+  <body>
+    <!-- link to javascript page   -->
+    <script src="index.js"></script>
+
+    <!-- ***********  background image  ********* -->
+
+    <img class="bg-img" src="background_3.jpg" alt="background_image" />
+
+    <!-- ****** Navigation (transparent) Bar  ******** -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="planet fit logo-1.png"
+            alt="Logo"
+            width="70"
+            height="70"
+            class="d-inline-block align-text-top" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Select Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Checkup</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Signup.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- text over background-image  -->
+    <div class="over_text">
+      <h1>
+        "Blood,sweat and <br />respect<br />First two you give, last<br />one
+        you <br />earn."
+      </h1>
+    </div>
+
+    <!-- heading for pricing cards -->
+
+    <div class="price-header">
+      <b> <h3>MEMBERSHIP PLANS</h3></b>
+    </div>
+
+    <!-- pricing cards-->
+
+    <div class="container">
+      <div class="row gy-5">
+        <!-- 3 month plan-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="pricing_card_image">
+              <img src="1_month_img.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">19 $/month</h5>
+              <p class="card-text">If not satisfied money back in 30 days</p>
+              <a href="#" class="btn btn-outline-dark" onclick="return false;"
+                >Get 1 month plan</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 month plan-->
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="pricing_card_image">
+              <img src="6_month_img.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">17 $/month</h5>
+              <p class="card-text">Save 12$</p>
+              <a href="#" class="btn btn-outline-dark" onclick="return false;"
+                >Get 6 month plan</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 1 year-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="pricing_card_image">
+              <img src="1_year_img.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">15 $/month</h5>
+              <p class="card-text">Save 48$</p>
+              <a href="#" class="btn btn-outline-dark" onclick="return false;"
+                >Get 1 Year plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonials   : carousel -->
+    <div class="testimonial-slider">
+      <div
+        id="carouselExample"
+        class="carousel carousel-dark slide d-none d-sm-block"
+        data-bs-ride="carousel">
+        <!-- used for functionality purpose i.e the slide will auto move or manual etc -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="testimonial-title">
+                <h2 class="fw-bold display-5">
+                  What Our Clients have to say🏋️!
+                </h2>
+              </div>
+
+              <!-- "<" button for sliding left  -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <!-- ">" button for sliding right  -->
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="col-md-8">
+              <!-- ********** crousel content *********** -->
+              <div class="carousel-inner">
+                <!-- structural aspect of the carousel -> contains styling , individual slides etc -->
+
+                <!-- slide 1-->
+                <div class="carousel-item active">
+                  <div class="card-wrapper">
+                    <!-- slide 1 card 1-->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test1.jpg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          John
+                          <h6>⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "Planet Fit is fantastic! The workouts are versatile,
+                          and the meal plans are easy to follow. More advanced
+                          workout options would make it perfect."
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- slide 1 card 2-->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test2.png" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Michael
+                          <h6>⭐⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "Planet Fit is fantastic! The workouts are versatile,
+                          and the meal plans are easy to follow. More advanced
+                          workout options would make it perfect."
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- slide 1 card 3-->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test3.jpg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          David
+                          <h6>⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          The beginner-friendly workouts helped me get started
+                          on my fitness journey. The only reason I'm giving it 4
+                          stars is that I'd love to see more nutritional content
+                          and recipes. Keep up the good work!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- slide 2-->
+                <div class="carousel-item">
+                  <div class="card-wrapper">
+                    <!-- slide 2 card 1-->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test4.jpg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Mark
+                          <h6>⭐⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "I can't say enough good things about Planet Fit! The
+                          workouts are challenging, but that's what I love about
+                          them. The trainers are motivating, and the results
+                          speak for themselves. I'm definitely sticking with
+                          this program for the long haul."
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- slide 2 card 2 -->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test5.jpeg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Grace
+                          <h6>⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "Planet Fit has transformed the way I approach
+                          fitness. The personalized workout plans and nutrition
+                          guidance have helped me lose weight and build
+                          strength. The only improvement I'd suggest is more
+                          frequent updates to keep things fresh."
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- slide 2 card 3-->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test6.jpg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          James
+                          <h6>⭐⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "I started using Planet Fit a few months ago, and it's
+                          been a decent experience. The workouts are effective,
+                          and I've seen progress. However, I'd appreciate more
+                          options for tracking my fitness journey, like a
+                          dedicated app. Still, it's worth a try!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- slide 3-->
+                <div class="carousel-item">
+                  <div class="card-wrapper">
+                    <!-- slide 3 card 1-->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test7.jpeg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Sophia
+                          <h6>⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "I've tried several fitness websites, but Planet Fit
+                          stands out. The workouts are challenging yet doable,
+                          and the nutrition advice is realistic. What sets it
+                          apart is the supportive community. It's like having a
+                          virtual fitness family. Five stars all the way!"
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- slide 3 card 2 -->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test8.jpg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          William
+                          <h6>⭐⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "Planet Fit is a game-changer. Well-structured
+                          workouts and knowledgeable trainers. More specialized
+                          training options would be a great addition."
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- slide 3 card 3 -->
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img src="test9.jpeg" alt="..." />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Robert
+                          <h6>⭐⭐⭐⭐⭐</h6>
+                        </h5>
+                        <p class="card-text">
+                          "I'm grateful for Planet Fit. It helped me regain
+                          fitness after a long hiatus. Engaging workouts and
+                          motivating progress tracking. More than 5 stars if I
+                          could!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- carousel content end-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- smaller screen   **************************************************************   -->
+
+      <div
+        id="carouselExampleSmallScreen"
+        class="carousel slide d-sm-none"
+        data-bs-ride="carousel">
+        <!-- used for functionality purpose i.e the slide will auto move or manual etc -->
+
+        <div class="carousel-inner">
+          <!-- structural aspect of the carousel -> contains styling , individual slides etc -->
+          <!-- *********************************************************************************-->
+          <!-- slide 1-->
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test1.jpg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  John
+                  <h6>⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "Planet Fit is fantastic! The workouts are versatile, and the
+                  meal plans are easy to follow. More advanced workout options
+                  would make it perfect."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 2-->
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test2.png" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Michael
+                  <h6>⭐⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "Planet Fit is fantastic! The workouts are versatile, and the
+                  meal plans are easy to follow. More advanced workout options
+                  would make it perfect."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 3-->
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test3.jpg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  David
+                  <h6>⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  The beginner-friendly workouts helped me get started on my
+                  fitness journey. The only reason I'm giving it 4 stars is that
+                  I'd love to see more nutritional content and recipes. Keep up
+                  the good work!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 4-->
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test4.jpg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mark
+                  <h6>⭐⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "I can't say enough good things about Planet Fit! The workouts
+                  are challenging, but that's what I love about them. The
+                  trainers are motivating, and the results speak for themselves.
+                  I'm definitely sticking with this program for the long haul."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 5-->
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test5.jpeg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Grace
+                  <h6>⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "Planet Fit has transformed the way I approach fitness. The
+                  personalized workout plans and nutrition guidance have helped
+                  me lose weight and build strength. The only improvement I'd
+                  suggest is more frequent updates to keep things fresh."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 6-->
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test6.jpg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  James
+                  <h6>⭐⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "I started using Planet Fit a few months ago, and it's been a
+                  decent experience. The workouts are effective, and I've seen
+                  progress. However, I'd appreciate more options for tracking my
+                  fitness journey, like a dedicated app. Still, it's worth a
+                  try!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 7-->
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test7.jpeg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Sophia
+                  <h6>⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "I've tried several fitness websites, but Planet Fit stands
+                  out. The workouts are challenging yet doable, and the
+                  nutrition advice is realistic. What sets it apart is the
+                  supportive community. It's like having a virtual fitness
+                  family. Five stars all the way!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 8-->
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test8.jpg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  William
+                  <h6>⭐⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "Planet Fit is a game-changer. Well-structured workouts and
+                  knowledgeable trainers. More specialized training options
+                  would be a great addition."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 9-->
+          <div class="carousel-item">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="test9.jpeg" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Robert
+                  <h6>⭐⭐⭐⭐⭐</h6>
+                </h5>
+                <p class="card-text">
+                  "I'm grateful for Planet Fit. It helped me regain fitness
+                  after a long hiatus. Engaging workouts and motivating progress
+                  tracking. More than 5 stars if I could!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--************************************************************************************-->
+        </div>
+        <!-- carousel inner end-->
+
+        <!-- "<" button for sliding left  -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleSmallScreen"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- ">" button for sliding right  -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleSmallScreen"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- smaller screen end-->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <!-- socials-->
+      <div class="col-1">
+        <h3>Socials</h3>
+        <br />
+        <div class="social-icons">
+          <i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i
+          ><i class="bi bi-twitter-x"></i>
+        </div>
+      </div>
+
+      <!-- blogs subscription-->
+      <div class="col-2">
+        <h3>Blogs</h3>
+        <form>
+          <input
+            type="email"
+            placeholder="Enter your email-id"
+            required /><br />
+          <button type="submit" onclick="return false;">SUBSCRIBE</button>
+        </form>
+      </div>
+
+      <!-- quick links -->
+      <div class="col-3">
+        <h3>Quick Links</h3>
+
+        <a href="#" onclick="return false;">About</a>
+        <a href="#" onclick="return false;">Careers</a>
+        <a href="#" onclick="return false;">News</a>
+        <a href="#" onclick="return false;">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>
